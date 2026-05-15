@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-luna-dark: #0a1f1f;
-  --color-luna-midnight: #0d5252;
-  --color-luna-gold: #d4a254;
-  --color-luna-gold-light: #e8d5b0;
-  --color-luna-cream: #fdfcf8;
-  --color-luna-blush: #faf6ee;
-  --color-luna-mauve: #a87a30;
-  --color-luna-charcoal: #0a1f1f;
-  --color-luna-gray: #4a5656;
-  --color-luna-light: #faf6ee;
+  --color-ln-espresso: #2c1810;
+  --color-ln-espresso-light: #3d2b1f;
+  --color-ln-terracotta: #c76b4a;
+  --color-ln-terracotta-soft: #e8a88a;
+  --color-ln-terracotta-light: #f2d5c4;
+  --color-ln-olive: #7a8a5e;
+  --color-ln-sage: #9aab7e;
+  --color-ln-cream: #f5efe6;
+  --color-ln-marble: #faf7f2;
+  --color-ln-gold: #c9a96e;
+  --color-ln-gold-light: #e0cca8;
+  --color-ln-charcoal: #1a0f0a;
+  --color-ln-warm-gray: #7a6b5e;
+  --color-ln-warm-light: #a89888;
 }
 
 html {
@@ -26,20 +30,34 @@ html {
   font-family: 'Playfair Display', Georgia, serif;
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #0d5252 0%, #d4a254 100%);
+.text-gradient-terracotta {
+  background: linear-gradient(135deg, #c76b4a 0%, #c9a96e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.text-gradient-gold-light {
-  background: linear-gradient(135deg, #ffffff 0%, #d4a254 100%);
+.text-gradient-warm {
+  background: linear-gradient(135deg, #f5efe6 0%, #c9a96e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.bg-gradient-teal {
-  background: linear-gradient(135deg, #0a1f1f 0%, #052e2e 100%);
+.bg-gradient-espresso {
+  background: linear-gradient(135deg, #2c1810 0%, #3d2b1f 100%);
+}
+
+.bg-gradient-warm {
+  background: linear-gradient(135deg, #f5efe6 0%, #faf7f2 100%);
+}
+
+.after-diamond::after {
+  content: "◆";
+  display: block;
+  text-align: center;
+  color: #c76b4a;
+  font-size: 10px;
+  margin-top: 8px;
+  opacity: 0.5;
 }

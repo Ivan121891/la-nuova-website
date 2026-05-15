@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 const allServices = [
   {
     name: 'Signature Micro-Needling',
-    desc: 'Stimulate your skin\'s natural collagen production with precision micro-needling. Reduces fine lines, scars, and enlarged pores for a smoother, firmer complexion.',
+    desc: 'Controlled micro-injuries awaken your skin\'s innate repair mechanisms, stimulating collagen and elastin production. Fine lines soften, scars diminish, and texture transforms over a series of sessions.',
     price: '$199',
     duration: '60 min',
-    tag: 'Collagen',
+    tag: 'Collagen Boost',
     image: 'facial-1.jpg',
   },
   {
     name: 'HydraFacial MD',
-    desc: 'The gold standard in medical-grade facials. Deep cleanse, exfoliate, extract, and infuse with antioxidants and hyaluronic acid for instant, visible radiance.',
+    desc: 'The vortex-cleansing technology extracts impurities while infusing the skin with antioxidants, peptides, and hyaluronic acid. Instant luminosity with zero downtime.',
     price: '$169',
     duration: '45 min',
     tag: 'Hydrating',
@@ -19,7 +19,7 @@ const allServices = [
   },
   {
     name: 'Laser Genesis',
-    desc: 'Non-ablative laser therapy that gently targets redness, uneven texture, and enlarged pores. Warm and relaxing — with zero downtime.',
+    desc: 'A gentle, warming laser that works beneath the surface to calm diffuse redness, tighten enlarged pores, and restore uniform tone. Comfortable enough for a lunch break.',
     price: '$249',
     duration: '45 min',
     tag: 'Laser',
@@ -27,15 +27,15 @@ const allServices = [
   },
   {
     name: 'Medical-Grade Chemical Peel',
-    desc: 'Customized peeling solutions to address hyperpigmentation, acne scarring, and dullness. Visible improvement in as little as one session.',
+    desc: 'Clinical-strength solutions, artfully selected for your unique concerns. Pigmentation, acne scarring, and surface dullness are visibly improved after the first application.',
     price: '$179',
     duration: '45 min',
-    tag: 'Resurfacing',
+    tag: 'Deep Resurfacing',
     image: 'facial-4.jpg',
   },
   {
     name: 'LED Light Therapy',
-    desc: 'Recharge your skin with clinical-grade LED wavelengths. Red light for anti-aging, blue light for acne — or both for a comprehensive boost.',
+    desc: 'Red light stimulates cellular repair and collagen synthesis; blue light targets acne-causing bacteria. Combined or solo, LED therapy is a powerful, painless boost for any skin type.',
     price: '$89',
     duration: '25 min',
     tag: 'Therapeutic',
@@ -43,7 +43,7 @@ const allServices = [
   },
   {
     name: 'PRP Microneedling (Vampire Facial)',
-    desc: 'Harness your body\'s own growth factors with platelet-rich plasma combined with micro-needling. Dramatic collagen induction for advanced rejuvenation.',
+    desc: 'Your blood\'s own growth factors — concentrated and delivered precisely into the skin via micro-needling. This advanced treatment triggers a profound healing response for dramatic rejuvenation.',
     price: '$399',
     duration: '75 min',
     tag: 'Advanced',
@@ -51,18 +51,18 @@ const allServices = [
   },
   {
     name: 'HydraFacial + LED Boost',
-    desc: 'Our most popular combination. Start with the HydraFacial MD for deep cleansing and hydration, then follow with LED therapy to lock in the glow.',
+    desc: 'The ultimate one-two punch. Start with the deep-cleansing, antioxidant-rich HydraFacial MD, then lock in results with LED light therapy. Glowing skin in under an hour.',
     price: '$229',
     duration: '60 min',
-    tag: 'Combination',
+    tag: 'Power Combo',
     image: 'spa-1.jpg',
   },
   {
-    name: 'Dermaplaning + Brightening Mask',
-    desc: 'Gentle exfoliation that removes peach fuzz and dead skin cells, followed by a radiance-boosting enzyme mask. Smooth, luminous, photo-ready skin.',
+    name: 'Dermaplaning + Enzyme Mask',
+    desc: 'A gentle physical exfoliation removes vellus hair and surface debris, allowing a brightening enzyme mask to penetrate deeply. The result is impossibly smooth, camera-ready skin.',
     price: '$129',
     duration: '40 min',
-    tag: 'Brightening',
+    tag: 'Photo Prep',
     image: 'facial-2.jpg',
   },
 ]
@@ -70,41 +70,45 @@ const allServices = [
 export default function Services() {
   return (
     <div>
-      <section className="py-20 bg-gradient-teal relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(212,162,84,0.06)_0%,transparent_45%),radial-gradient(circle_at_15%_85%,rgba(13,82,82,0.04)_0%,transparent_45%)]" />
+      {/* Hero */}
+      <section className="py-20 bg-gradient-espresso relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(201,169,110,0.06)_0%,transparent_45%),radial-gradient(circle_at_15%_85%,rgba(199,107,74,0.04)_0%,transparent_45%)]" />
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          <span className="text-luna-gold-light text-sm tracking-[0.2em] uppercase">Treatments</span>
-          <h1 className="mt-3 text-5xl sm:text-6xl font-playfair text-luna-cream">Medical Aesthetic Services</h1>
-          <p className="mt-4 text-luna-cream/60 max-w-xl mx-auto">
-            From advanced laser therapy to clinical-grade peels — every treatment is customized to your unique skin goals.
+          <div className="flex items-center justify-center gap-2 text-ln-gold text-xs tracking-[0.2em] uppercase mb-6">
+            <span className="w-6 h-px bg-ln-gold" />
+            Treatments
+            <span className="w-6 h-px bg-ln-gold" />
+          </div>
+          <h1 className="text-5xl sm:text-6xl font-playfair text-ln-cream">Medical Aesthetic Services</h1>
+          <p className="mt-4 text-ln-cream/50 max-w-xl mx-auto text-sm">
+            Every treatment we offer is rooted in clinical evidence and delivered with an artist's sensibility — because your skin deserves nothing less than exceptional care.
           </p>
         </div>
       </section>
 
-      <section className="py-24 bg-luna-cream">
+      {/* Services grid */}
+      <section className="py-24 bg-ln-marble">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {allServices.map(s => (
-              <div key={s.name} className="group bg-white rounded-2xl overflow-hidden border border-luna-gold/5 shadow-sm hover:shadow-md transition-all duration-300">
+              <div key={s.name}
+                className="group bg-ln-cream rounded-2xl overflow-hidden border border-ln-terracotta/5 hover:shadow-lg transition-all duration-300">
                 <div className="aspect-[3/2] overflow-hidden">
-                  <img
-                    src={'/images/' + s.image}
-                    alt={s.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src={'/images/' + s.image} alt={s.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="text-xl font-playfair text-luna-charcoal">{s.name}</h3>
-                      <span className="inline-block mt-2 text-xs tracking-wider uppercase px-3 py-1 rounded-full bg-luna-blush text-luna-mauve">{s.tag}</span>
+                      <h3 className="text-xl font-playfair text-ln-espresso">{s.name}</h3>
+                      <span className="inline-block mt-2 text-[10px] tracking-wider uppercase px-3 py-1 rounded-full bg-ln-terracotta/10 text-ln-terracotta font-medium">{s.tag}</span>
                     </div>
-                    <div className="text-right">
-                      <p className="text-2xl font-playfair text-luna-gold">{s.price}</p>
-                      <p className="text-xs text-luna-gray">{s.duration}</p>
+                    <div className="text-right shrink-0 ml-4">
+                      <p className="text-2xl font-playfair text-ln-terracotta">{s.price}</p>
+                      <p className="text-xs text-ln-warm-gray">{s.duration}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-luna-gray leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-ln-warm-gray leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -112,12 +116,13 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-teal relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(212,162,84,0.06)_0%,transparent_45%),radial-gradient(circle_at_15%_85%,rgba(13,82,82,0.04)_0%,transparent_45%)]" />
-        <div className="relative max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-playfair text-luna-cream">Not Sure Which Treatment Is Right for You?</h2>
-          <p className="mt-3 text-luna-cream/60">Schedule a complimentary consultation and let our team recommend the perfect service for your skin goals.</p>
-          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 bg-luna-midnight text-white font-semibold text-base rounded-[8px] shadow-[0_4px_12px_rgba(13,82,82,0.25)] hover:brightness-110 transition-all duration-200">
+      {/* CTA */}
+      <section className="py-16 bg-ln-cream border-t border-ln-terracotta/5">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-playfair text-ln-espresso">Every Skin Deserves a Custom Approach</h2>
+          <p className="mt-3 text-ln-warm-gray text-sm">Book a complimentary consultation and let our specialists design a roadmap tailored to your unique skin concerns and aspirations.</p>
+          <Link to="/contact"
+            className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 bg-ln-terracotta text-white font-medium text-base rounded-full hover:brightness-110 transition-all duration-200 shadow-[0_4px_16px_rgba(199,107,74,0.3)]">
             Schedule a Consultation
             <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>

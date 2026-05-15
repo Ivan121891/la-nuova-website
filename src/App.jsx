@@ -13,7 +13,7 @@ import CheckoutSuccess from './pages/CheckoutSuccess'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-luna-cream text-luna-charcoal flex flex-col">
+    <div className="min-h-screen bg-ln-marble text-ln-charcoal flex flex-col">
       <Navbar />
       <main className="flex-1">
         <Routes>

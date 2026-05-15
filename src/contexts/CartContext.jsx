@@ -5,7 +5,7 @@ const CartContext = createContext()
 export function CartProvider({ children }) {
   const [items, setItems] = useState(() => {
     try {
-      const saved = localStorage.getItem('introstem-cart')
+      const saved = localStorage.getItem('la-nuova-cart')
       return saved ? JSON.parse(saved) : []
     } catch {
       return []
@@ -14,7 +14,7 @@ export function CartProvider({ children }) {
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   useEffect(() => {
-    localStorage.setItem('introstem-cart', JSON.stringify(items))
+    localStorage.setItem('la-nuova-cart', JSON.stringify(items))
   }, [items])
 
   const addItem = (product) => {
