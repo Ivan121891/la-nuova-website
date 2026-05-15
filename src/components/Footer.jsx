@@ -23,9 +23,9 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {[
                 { to: '/', label: 'Home' },
-                { to: '/services', label: 'Services' },
+                { to: '/services', label: 'Facial Services' },
                 { to: '/packages', label: 'Packages' },
-                { to: '/about', label: 'Our Story' },
+                { to: '/about', label: 'About Us' },
                 { to: '/contact', label: 'Contact' },
               ].map(l => (
                 <li key={l.to}>

@@ -4,9 +4,9 @@ import { useCart } from '../contexts/CartContext'
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/services', label: 'Services' },
+  { to: '/services', label: 'Facial Services' },
   { to: '/packages', label: 'Packages' },
-  { to: '/about', label: 'Our Story' },
+  { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
 ]
 
