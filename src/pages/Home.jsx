@@ -11,7 +11,6 @@ const featuredPackages = [
   { name: 'The North Shore Glow', price: '$349', original: '$445', desc: 'A radiant duo — HydraFacial meets LED therapy for skin that seems to light from within.', image: 'facial-2.jpg' },
   { name: 'The Old Orchard', price: '$549', original: '$690', desc: 'Powerful resurfacing: micro-needling paired with a medical-grade peel for deep collagen renewal.', image: 'facial-4.jpg' },
   { name: 'Monthly Membership', price: '$129/mo', desc: 'One advanced treatment every month, 20% off add-ons, and exclusive perks. Self-care made effortless.', image: 'spa-1.jpg' },
-  { name: 'Couples Spa Retreat', price: '$699', original: '$895', desc: 'Two treatments, one unforgettable experience. Share the glow in our private couples suite at Old Orchard.', image: 'spa-2.jpg' },
 ]
 
 const testimonials = [
@@ -162,7 +161,7 @@ export default function Home() {
             <h2 className="mt-3 text-4xl sm:text-5xl font-playfair text-ln-espresso">Featured Packages</h2>
             <p className="mt-4 text-ln-warm-gray max-w-xl mx-auto text-sm">Thoughtfully paired treatments that work together beautifully — for better results and better value.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredPackages.map(pkg => (
               <div key={pkg.name}
                 className="group bg-ln-marble rounded-2xl overflow-hidden border border-ln-terracotta/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">

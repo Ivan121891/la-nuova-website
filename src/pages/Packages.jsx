@@ -63,16 +63,6 @@ const packages = [
     popular: false,
     image: 'facial-6.jpg',
   },
-  {
-    id: 'couples-retreat',
-    name: 'Couples Spa Retreat',
-    price: '699',
-    original: '895',
-    desc: 'Side-by-side luxury at Old Orchard Center. Each guest selects their own treatment, then enjoys champagne and conversation in our private couples suite.',
-    items: ['2 Fully Customized Treatments (Your Choice)', 'Champagne or Sparkling Toast', '20% Off Take-Home Retail Products'],
-    popular: false,
-    image: 'facial-3.jpg',
-  },
 ]
 
 export default function Packages() {
@@ -106,7 +96,7 @@ export default function Packages() {
       {/* Grid */}
       <section className="py-24 bg-ln-marble">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
             {packages.map(pkg => (
               <div key={pkg.name}
                 className={`relative rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
