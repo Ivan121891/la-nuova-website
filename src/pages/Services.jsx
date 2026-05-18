@@ -10,11 +10,11 @@ const allServices = [
     image: 'facial-2.jpg',
   },
   {
-    name: 'Medical-Grade Chemical Peel',
-    desc: 'Clinical-strength solutions, artfully selected for your unique concerns. Pigmentation, acne scarring, and surface dullness are visibly improved after the first application — no needles, just results.',
+    name: 'Custom Clinical Facial',
+    desc: 'A fully personalized facial experience curated to your skin\'s exact needs. Advanced serums, therapeutic massage, and targeted mask therapy deliver visible renewal — no harsh chemicals, no needles, just pure results.',
     price: '$179',
     duration: '45 min',
-    tag: 'Deep Resurfacing',
+    tag: 'Clinical Grade',
     image: 'facial-4.jpg',
   },
   {

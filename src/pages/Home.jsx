@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const services = [
   { name: 'HydraFacial MD', desc: 'The gold standard in medical-grade facials. Vortex-cleansing, gentle extraction, and antioxidant infusion reveal a glow that lasts for days.', price: '$169', icon: 'droplet' },
-  { name: 'Medical-Grade Chemical Peel', desc: 'Clinically formulated solutions tailored to your skin\'s unique needs. Pigmentation, scarring, and dullness meet their match in days, not weeks.', price: '$179', icon: 'heart' },
+  { name: 'Custom Clinical Facial', desc: 'A bespoke clinical facial tailored to your skin\'s unique needs. Advanced actives and therapeutic techniques address texture, tone, and dullness — no chemicals, just craftsmanship.', price: '$179', icon: 'heart' },
   { name: 'Vitamin C Brightening Facial', desc: 'Gentle enzymatic exfoliation meets potent vitamin C infusion for a luminous, even-toned complexion that radiates health.', price: '$149', icon: 'sparkles' },
   { name: 'Deep Pore Cleansing Facial', desc: 'Steam, gentle extraction, and purifying masks clear congestion and restore balance — pure facial care, no needles required.', price: '$139', icon: 'shield' },
 ]
