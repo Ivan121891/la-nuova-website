@@ -7,11 +7,11 @@ const team = [
   },
   {
     name: 'Maya Williams', role: 'Lead Aesthetician',
-    bio: 'With nearly a decade of specialized experience, Maya has honed her craft across micro-needling, chemical peels, and advanced facial therapies. Guests return for her gentle technique, meticulous attention, and gift for making even a first visit feel familiar.',
+    bio: 'With nearly a decade of specialized experience, Maya has honed her craft across advanced facial therapies, chemical peels, and transformative skin treatments. Guests return for her gentle technique, meticulous attention, and gift for making even a first visit feel familiar.',
   },
   {
     name: 'James Park', role: 'Clinical Specialist',
-    bio: 'James brings deep expertise in laser technologies and non-invasive contouring, paired with a rare ability to demystify complex treatments. Guests appreciate his thoroughness, patience, and knack for turning clinical jargon into clear, reassuring guidance.',
+    bio: 'James brings deep expertise in advanced facial technologies and non-invasive skin therapies, paired with a rare ability to demystify complex treatments. Guests appreciate his thoroughness, patience, and knack for turning clinical jargon into clear, reassuring guidance.',
   },
 ]
 

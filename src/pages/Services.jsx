@@ -2,68 +2,52 @@ import { Link } from 'react-router-dom'
 
 const allServices = [
   {
-    name: 'Signature Micro-Needling',
-    desc: 'Controlled micro-injuries awaken your skin\'s innate repair mechanisms, stimulating collagen and elastin production. Fine lines soften, scars diminish, and texture transforms over a series of sessions.',
-    price: '$199',
-    duration: '60 min',
-    tag: 'Collagen Boost',
-    image: 'facial-1.jpg',
-  },
-  {
     name: 'HydraFacial MD',
-    desc: 'The vortex-cleansing technology extracts impurities while infusing the skin with antioxidants, peptides, and hyaluronic acid. Instant luminosity with zero downtime.',
+    desc: 'The gold standard in medical-grade facials. Vortex-cleansing technology extracts impurities while infusing antioxidants, peptides, and hyaluronic acid deep into the skin. Instant luminosity with zero downtime.',
     price: '$169',
     duration: '45 min',
     tag: 'Hydrating',
     image: 'facial-2.jpg',
   },
   {
-    name: 'Laser Genesis',
-    desc: 'A gentle, warming laser that works beneath the surface to calm diffuse redness, tighten enlarged pores, and restore uniform tone. Comfortable enough for a lunch break.',
-    price: '$249',
-    duration: '45 min',
-    tag: 'Laser',
-    image: 'facial-3.jpg',
-  },
-  {
     name: 'Medical-Grade Chemical Peel',
-    desc: 'Clinical-strength solutions, artfully selected for your unique concerns. Pigmentation, acne scarring, and surface dullness are visibly improved after the first application.',
+    desc: 'Clinical-strength solutions, artfully selected for your unique concerns. Pigmentation, acne scarring, and surface dullness are visibly improved after the first application — no needles, just results.',
     price: '$179',
     duration: '45 min',
     tag: 'Deep Resurfacing',
     image: 'facial-4.jpg',
   },
   {
-    name: 'LED Light Therapy',
-    desc: 'Red light stimulates cellular repair and collagen synthesis; blue light targets acne-causing bacteria. Combined or solo, LED therapy is a powerful, painless boost for any skin type.',
-    price: '$89',
-    duration: '25 min',
-    tag: 'Therapeutic',
-    image: 'facial-5.jpg',
-  },
-  {
-    name: 'PRP Microneedling (Vampire Facial)',
-    desc: 'Your blood\'s own growth factors — concentrated and delivered precisely into the skin via micro-needling. This advanced treatment triggers a profound healing response for dramatic rejuvenation.',
-    price: '$399',
-    duration: '75 min',
-    tag: 'Advanced',
-    image: 'facial-6.jpg',
+    name: 'Dermaplaning + Enzyme Mask',
+    desc: 'A gentle physical exfoliation removes vellus hair and surface debris, allowing a brightening enzyme mask to penetrate deeply. The result is impossibly smooth, camera-ready skin — pure and simple.',
+    price: '$129',
+    duration: '40 min',
+    tag: 'Photo Prep',
+    image: 'facial-2.jpg',
   },
   {
     name: 'HydraFacial + LED Boost',
-    desc: 'The ultimate one-two punch. Start with the deep-cleansing, antioxidant-rich HydraFacial MD, then lock in results with LED light therapy. Glowing skin in under an hour.',
+    desc: 'The ultimate facial duo. Start with the deep-cleansing, antioxidant-rich HydraFacial MD, then lock in results with LED light therapy. Glowing, refreshed skin in under an hour — no downtime, no needles.',
     price: '$229',
     duration: '60 min',
     tag: 'Power Combo',
     image: 'spa-1.jpg',
   },
   {
-    name: 'Dermaplaning + Enzyme Mask',
-    desc: 'A gentle physical exfoliation removes vellus hair and surface debris, allowing a brightening enzyme mask to penetrate deeply. The result is impossibly smooth, camera-ready skin.',
-    price: '$129',
-    duration: '40 min',
-    tag: 'Photo Prep',
-    image: 'facial-2.jpg',
+    name: 'Vitamin C Brightening Facial',
+    desc: 'A luminous awakening facial that combines gentle enzymatic exfoliation with a potent vitamin C infusion. Uneven tone fades, dullness lifts, and your natural radiance emerges after a single session.',
+    price: '$149',
+    duration: '50 min',
+    tag: 'Brightening',
+    image: 'facial-3.jpg',
+  },
+  {
+    name: 'Deep Pore Cleansing Facial',
+    desc: 'A thorough, results-driven facial for congested skin. Steam, gentle extraction, purifying mask, and calming serum work together to clear pores and restore balance — without irritation or needles.',
+    price: '$139',
+    duration: '50 min',
+    tag: 'Clarifying',
+    image: 'facial-5.jpg',
   },
 ]
 
@@ -79,9 +63,9 @@ export default function Services() {
             Treatments
             <span className="w-6 h-px bg-ln-gold" />
           </div>
-          <h1 className="text-5xl sm:text-6xl font-playfair text-ln-cream">Medical Aesthetic Services</h1>
+          <h1 className="text-5xl sm:text-6xl font-playfair text-ln-cream">Pure Facial Services</h1>
           <p className="mt-4 text-ln-cream/50 max-w-xl mx-auto text-sm">
-            Every treatment we offer is rooted in clinical evidence and delivered with an artist's sensibility — because your skin deserves nothing less than exceptional care.
+            Needle-free, microneedling-free — just pure, transformative facial treatments. Every service is rooted in clinical evidence and delivered with an artist's sensibility for radiant, healthy skin.
           </p>
         </div>
       </section>

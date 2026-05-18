@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CartDrawer from './components/CartDrawer'
@@ -12,6 +13,15 @@ import Contact from './pages/Contact'
 import CheckoutSuccess from './pages/CheckoutSuccess'
 
 export default function App() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const redirect = sessionStorage.getItem('redirect')
+    if (redirect) {
+      sessionStorage.removeItem('redirect')
+      navigate(redirect, { replace: true })
+    }
+  }, [navigate])
   return (
     <div className="min-h-screen bg-ln-marble text-ln-charcoal flex flex-col">
       <Navbar />

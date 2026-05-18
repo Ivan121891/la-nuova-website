@@ -5,7 +5,7 @@ npm run build
 
 TMP=$(mktemp -d)
 cp -r dist/* "$TMP/"
-echo "lanuovaskokie.com" > "$TMP/CNAME"
+echo "lanuovaillinois.com" > "$TMP/CNAME"
 touch "$TMP/.nojekyll"
 
 cd "$TMP"

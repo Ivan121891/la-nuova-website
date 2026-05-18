@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
 
 const services = [
-  { name: 'Signature Micro-Needling', desc: 'Precision collagen induction therapy that gently awakens your skin\'s natural renewal process. Fine lines soften, scars fade, and texture transforms.', price: '$199', icon: 'sparkles' },
   { name: 'HydraFacial MD', desc: 'The gold standard in medical-grade facials. Vortex-cleansing, gentle extraction, and antioxidant infusion reveal a glow that lasts for days.', price: '$169', icon: 'droplet' },
-  { name: 'Laser Genesis', desc: 'Soothing laser energy works beneath the surface to calm redness, refine pores, and restore even tone. Zero downtime, radiant results.', price: '$249', icon: 'shield' },
   { name: 'Medical-Grade Chemical Peel', desc: 'Clinically formulated solutions tailored to your skin\'s unique needs. Pigmentation, scarring, and dullness meet their match in days, not weeks.', price: '$179', icon: 'heart' },
+  { name: 'Vitamin C Brightening Facial', desc: 'Gentle enzymatic exfoliation meets potent vitamin C infusion for a luminous, even-toned complexion that radiates health.', price: '$149', icon: 'sparkles' },
+  { name: 'Deep Pore Cleansing Facial', desc: 'Steam, gentle extraction, and purifying masks clear congestion and restore balance — pure facial care, no needles required.', price: '$139', icon: 'shield' },
 ]
 
 const featuredPackages = [
   { name: 'The North Shore Glow', price: '$349', original: '$445', desc: 'A radiant duo — HydraFacial meets LED therapy for skin that seems to light from within.', image: 'facial-2.jpg' },
-  { name: 'The Old Orchard', price: '$549', original: '$690', desc: 'Powerful resurfacing: micro-needling paired with a medical-grade peel for deep collagen renewal.', image: 'facial-4.jpg' },
+  { name: 'The Old Orchard', price: '$549', original: '$690', desc: 'Luxurious resurfacing: HydraFacial MD paired with a medical-grade peel for deep renewal and luminous skin.', image: 'facial-4.jpg' },
   { name: 'Monthly Membership', price: '$129/mo', desc: 'One advanced treatment every month, 20% off add-ons, and exclusive perks. Self-care made effortless.', image: 'spa-1.jpg' },
 ]
 
