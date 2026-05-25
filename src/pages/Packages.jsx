@@ -41,7 +41,7 @@ const packages = [
     items: ['One Advanced Treatment Monthly (up to $169 value)', '20% Off All Add-On Services', '15% Off Medical-Grade Retail', 'Complimentary Birthday Treatment'],
     popular: false,
     monthly: true,
-    image: 'spa-1.jpg',
+    image: 'spa-2.jpg',
   },
   {
     id: 'clear-skin',
