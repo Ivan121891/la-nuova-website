@@ -15,8 +15,8 @@ const packages = [
   {
     id: 'old-orchard',
     name: 'The Old Orchard',
-    price: '1500',
-    original: '1800',
+    price: '1700',
+    original: '2000',
     desc: 'A luxurious resurfacing ritual — HydraFacial MD deeply cleanses and infuses antioxidants, followed by a custom clinical facial that reveals fresh, luminous skin.',
     items: ['Full HydraFacial MD Session', 'Custom Clinical Facial', 'Calming Post-Treatment Recovery Mask'],
     popular: false,
@@ -25,8 +25,8 @@ const packages = [
   {
     id: 'laser-renewal',
     name: 'Facial Renewal Course',
-    price: '1500',
-    original: '1800',
+    price: '2000',
+    original: '2400',
     desc: 'Three sessions of our advanced HydraFacial MD, spaced for optimal cumulative results. Each visit deep-cleanses, infuses, and rejuvenates — texture refines, tone brightens, and luminosity builds.',
     items: ['3 Full HydraFacial MD Sessions', 'Personalized Home-Care Prescription', 'Progress Tracking & Photo Analysis'],
     popular: false,
@@ -46,8 +46,8 @@ const packages = [
   {
     id: 'clear-skin',
     name: 'Clear Skin Protocol',
-    price: '1500',
-    original: '1800',
+    price: '1600',
+    original: '1900',
     desc: 'A clinically driven protocol for congested and acne-prone skin. Salicylic peel exfoliates deeply, blue LED calms inflammation, and clay draws impurities to the surface.',
     items: ['Medical-Grade Salicylic Acid Peel', 'LED Blue Light Therapy Session', 'Purifying Clay Mask Treatment', 'Home-Care Starter Kit (Travel-Size)'],
     popular: false,
@@ -56,8 +56,8 @@ const packages = [
   {
     id: 'age-defy',
     name: 'Age-Defy Ritual',
-    price: '1500',
-    original: '1800',
+    price: '1800',
+    original: '2150',
     desc: 'The gold-standard HydraFacial MD deep-cleans and infuses, while LED red light therapy and a collagen-boosting enzyme peel work synergistically to restore firmness and glow.',
     items: ['Full HydraFacial MD Session', 'LED Red Light Therapy — Collagen Boost', 'Anti-Aging Enzyme & Peptide Mask'],
     popular: false,
